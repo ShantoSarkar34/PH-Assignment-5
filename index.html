@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>DevBoard</title>
+  </head>
+  <body class="poppins-font bg-slate-400">
+    <!-- header section start  -->
+    <header class=" w-full ">
+      <section class="container mx-auto px-6 bg-white py-8 rounded-[16px]">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" alt="logo" />
+            <h2 class="text-[35.67px] tracking-[1px] font-light text-[#00303C]">
+              Dev<span class="font-bold">Board</span>
+            </h2>
+          </div>
+          <div class="flex items-center gap-[50px]">
+            <div class="bg-[#F4F7FF] rounded-full px-4">
+              <div class="flex items-center gap-3">
+                <img src="./assets/checkbox.png" alt="checkbox" />
+                <h2
+                  id="total_task"
+                  class="font-bold text-[32px] text-[#1E1E1E]"
+                >
+                  23
+                </h2>
+              </div>
+            </div>
+            <button id="bg_color_change">
+              <img src="./assets/theme-btn.png" alt="color_btnm" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- main section start  -->
+    <main class="main_section py-6">
+      <section class="container mx-auto ">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          <!-- cart top section start  -->
+          <div class="lg:col-span-3 bg-white rounded-[16px] p-6">
+            <div
+              class="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:items-center justify-between border-b border-dashed border-[#3751fd2d] pb-8"
+            >
+              <div
+                class="bg-[#F4F7FF] p-8 rounded-[12px] flex items-center gap-5"
+              >
+                <div class="bg-white p-4 rounded-full">
+                  <img src="./assets/checkbox.png" alt="checkbox" />
+                </div>
+                <!-- remaining content section start  -->
+                <div class="">
+                  <p class="text-[16px] font-medium text-[#00303C]">
+                    Task Assigned
+                  </p>
+                  <h2
+                    id="remaining_click"
+                    class="text-[32px] text-[#00303C] font-bold"
+                  >
+                    06
+                  </h2>
+                </div>
+              </div>
+              <button
+                id="second_page_btn"
+                class="py-5 px-14 rounded-[12px] bg_gradient flex items-center gap-5"
+              >
+                <img src="./assets/board.png" alt="board" />
+
+                <p class="text-[20px] text-start text-white font-normal">
+                  Discover Something <br />
+                  New Today!
+                </p>
+              </button>
+              <div
+                class="bg-[#F4F7FF] p-8 rounded-[12px] flex items-center gap-5"
+              >
+                <div class="bg-white p-4 rounded-full">
+                  <img src="./assets/checkbox.png" alt="checkbox" />
+                </div>
+                <div class="">
+                  <p class="text-[16px] font-medium text-[#00303C]">Date</p>
+                  <h2
+                    id="current_date"
+                    class="text-[22px] text-[#00303C] font-bold"
+                  >
+                    JUl 28 2025
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <!-- cart section start  -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-9 mt-8">
+              <div class="rounded-[16px] bg-[#F4F7FF] p-6">
+                <div class="flex">
+                  <p
+                    class="bg-white rounded-[8px] text-[00303C] text-[16px] py-2 px-4 text-[#00303C] font-medium"
+                  >
+                    ShopEase
+                  </p>
+                </div>
+                <h3 class="text-[#00303C] text-[24px] font-medium my-4">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="bg-white p-4 rounded-[8px]">
+                  <p class="text-[16px] opacity-[50%]">
+                    Store the user's preference in localStorage, update CSS.
+                  </p>
+                </div>
+                <div class="border-t border-dashed border-[#3751fd2d] mt-3">
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="text-[16px] opacity-[70%] text-[00303C]">
+                        Deadline
+                      </p>
+                      <h6 class="text-[16px] text-[00303C] font-medium">
+                        21 March 2025
+                      </h6>
+                    </div>
+                    <button
+                      class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                    >
+                      Compleate
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[16px] bg-[#F4F7FF] p-6">
+                <div class="flex">
+                  <p
+                    class="bg-white rounded-[8px] text-[00303C] text-[16px] py-2 px-4 text-[#00303C] font-medium"
+                  >
+                    ShopEase
+                  </p>
+                </div>
+                <h3 class="text-[#00303C] text-[24px] font-medium my-4">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="bg-white p-4 rounded-[8px]">
+                  <p class="text-[16px] opacity-[50%]">
+                    Store the user's preference in localStorage, update CSS.
+                  </p>
+                </div>
+                <div class="border-t border-dashed border-[#3751fd2d] mt-3">
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="text-[16px] opacity-[70%] text-[00303C]">
+                        Deadline
+                      </p>
+                      <h6 class="text-[16px] text-[00303C] font-medium">
+                        21 March 2025
+                      </h6>
+                    </div>
+                    <button
+                      class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                    >
+                      Compleate
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[16px] bg-[#F4F7FF] p-6">
+                <div class="flex">
+                  <p
+                    class="bg-white rounded-[8px] text-[00303C] text-[16px] py-2 px-4 text-[#00303C] font-medium"
+                  >
+                    ShopEase
+                  </p>
+                </div>
+                <h3 class="text-[#00303C] text-[24px] font-medium my-4">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="bg-white p-4 rounded-[8px]">
+                  <p class="text-[16px] opacity-[50%]">
+                    Store the user's preference in localStorage, update CSS.
+                  </p>
+                </div>
+                <div class="border-t border-dashed border-[#3751fd2d] mt-3">
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="text-[16px] opacity-[70%] text-[00303C]">
+                        Deadline
+                      </p>
+                      <h6 class="text-[16px] text-[00303C] font-medium">
+                        21 March 2025
+                      </h6>
+                    </div>
+                    <button
+                      class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                    >
+                      Compleate
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[16px] bg-[#F4F7FF] p-6">
+                <div class="flex">
+                  <p
+                    class="bg-white rounded-[8px] text-[00303C] text-[16px] py-2 px-4 text-[#00303C] font-medium"
+                  >
+                    ShopEase
+                  </p>
+                </div>
+                <h3 class="text-[#00303C] text-[24px] font-medium my-4">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="bg-white p-4 rounded-[8px]">
+                  <p class="text-[16px] opacity-[50%]">
+                    Store the user's preference in localStorage, update CSS.
+                  </p>
+                </div>
+                <div class="border-t border-dashed border-[#3751fd2d] mt-3">
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="text-[16px] opacity-[70%] text-[00303C]">
+                        Deadline
+                      </p>
+                      <h6 class="text-[16px] text-[00303C] font-medium">
+                        21 March 2025
+                      </h6>
+                    </div>
+                    <button
+                      class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                    >
+                      Compleate
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[16px] bg-[#F4F7FF] p-6">
+                <div class="flex">
+                  <p
+                    class="bg-white rounded-[8px] text-[00303C] text-[16px] py-2 px-4 text-[#00303C] font-medium"
+                  >
+                    ShopEase
+                  </p>
+                </div>
+                <h3 class="text-[#00303C] text-[24px] font-medium my-4">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="bg-white p-4 rounded-[8px]">
+                  <p class="text-[16px] opacity-[50%]">
+                    Store the user's preference in localStorage, update CSS.
+                  </p>
+                </div>
+                <div class="border-t border-dashed border-[#3751fd2d] mt-3">
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="text-[16px] opacity-[70%] text-[00303C]">
+                        Deadline
+                      </p>
+                      <h6 class="text-[16px] text-[00303C] font-medium">
+                        21 March 2025
+                      </h6>
+                    </div>
+                    <button
+                      class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                    >
+                      Compleate
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[16px] bg-[#F4F7FF] p-6">
+                <div class="flex">
+                  <p
+                    class="bg-white rounded-[8px] text-[00303C] text-[16px] py-2 px-4 text-[#00303C] font-medium"
+                  >
+                    ShopEase
+                  </p>
+                </div>
+                <h3 class="text-[#00303C] text-[24px] font-medium my-4">
+                  Fix Mobile Button Issue
+                </h3>
+                <div class="bg-white p-4 rounded-[8px]">
+                  <p class="text-[16px] opacity-[50%]">
+                    Store the user's preference in localStorage, update CSS.
+                  </p>
+                </div>
+                <div class="border-t border-dashed border-[#3751fd2d] mt-3">
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="text-[16px] opacity-[70%] text-[00303C]">
+                        Deadline
+                      </p>
+                      <h6 class="text-[16px] text-[00303C] font-medium">
+                        21 March 2025
+                      </h6>
+                    </div>
+                    <button
+                      class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                    >
+                      Compleate
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- activity log start  -->
+          <div class="bg-white rounded-[16px] p-6">
+            <div class="border-b border-dashed border-[#3751fd2d] pb-8">
+              <div class="flex items-center gap-4 justify-center">
+                <img src="./assets/activity.png" alt="activity" />
+                <p class="text-[20px] font-medium text-[#00303C]">
+                  Activity Log
+                </p>
+              </div>
+              <div class="flex justify-center mt-5">
+                <button
+                  id="history_clear_btn"
+                  class="rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
+                >
+                  Clear History
+                </button>
+              </div>
+            </div>
+            <div id="history" class="mt-8 bg-[#F4F7FF] p-4 rounded-[12px]">
+              <h4 class="text-[16px] opacity-[70%] text-[#00303C]">
+                you have compleated the task (catagory) (current time)
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
