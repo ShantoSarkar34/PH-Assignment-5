@@ -104,9 +104,9 @@
                     ShopEase
                   </p>
                 </div>
-                <div class="cart">
+                <div id="cart_1" class="card">
                   <h3
-                    class="text-[#00303C] text-[24px] font-medium my-4 cart_title"
+                    class="text-[#00303C] text-[24px] font-medium my-4 card_title"
                   >
                     Fix Mobile Button Issue
                   </h3>
@@ -128,6 +128,8 @@
                         </h6>
                       </div>
                       <button
+                        onclick="logName(this)"
+                        id="compleate_btn_1"
                         class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
                       >
                         Compleate
@@ -145,9 +147,9 @@
                     CloudSync
                   </p>
                 </div>
-                <div class="cart">
+                <div id="cart_2" class="card">
                   <h3
-                    class="text-[#00303C] text-[24px] font-medium my-4 cart_title"
+                    class="text-[#00303C] text-[24px] font-medium my-4 card_title"
                   >
                     Add Dark Mode
                   </h3>
@@ -169,6 +171,8 @@
                         </h6>
                       </div>
                       <button
+                        onclick="logName(this)"
+                        id="compleate_btn_2"
                         class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
                       >
                         Compleate
@@ -186,9 +190,9 @@
                     SwiftPay
                   </p>
                 </div>
-                <div class="cart">
+                <div id="cart_3" class="card">
                   <h3
-                    class="text-[#00303C] text-[24px] font-medium my-4 cart_title"
+                    class="text-[#00303C] text-[24px] font-medium my-4 card_title"
                   >
                     Optimize Home page 
                   </h3>
@@ -210,6 +214,8 @@
                         </h6>
                       </div>
                       <button
+                        onclick="logName(this)"
+                        id="compleate_btn_3"
                         class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
                       >
                         Compleate
@@ -227,9 +233,9 @@
                     Meta
                   </p>
                 </div>
-                <div class="cart">
+                <div id="cart" class="card">
                   <h3
-                    class="text-[#00303C] text-[24px] font-medium my-4 cart_title"
+                    class="text-[#00303C] text-[24px] font-medium my-4 card_title"
                   >
                     Add new emoji 🤲
                   </h3>
@@ -250,6 +256,8 @@
                         </h6>
                       </div>
                       <button
+                        onclick="logName(this)"
+                        id="compleate_btn_4"
                         class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
                       >
                         Compleate
@@ -267,9 +275,9 @@
                     Google LLC
                   </p>
                 </div>
-                <div class="cart">
+                <div id="cart" class="card">
                   <h3
-                    class="text-[#00303C] text-[24px] font-medium my-4 cart_title"
+                    class="text-[#00303C] text-[24px] font-medium my-4 card_title"
                   >
                     Integrate OpenAI API
                   </h3>
@@ -291,6 +299,8 @@
                         </h6>
                       </div>
                       <button
+                        onclick="logName(this)"
+                        id="compleate_btn_5"
                         class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
                       >
                         Compleate
@@ -308,9 +318,10 @@
                     Glassdoar
                   </p>
                 </div>
-                <div class="cart">
+                <div id="cart_6" class="card">
                   <h3
-                    class="text-[#00303C] text-[24px] font-medium my-4 cart_title"
+                    id="title_6"
+                    class="text-[#00303C] text-[24px] font-medium my-4 card_title"
                   >
                     Improve Job searching
                   </h3>
@@ -332,6 +343,8 @@
                         </h6>
                       </div>
                       <button
+                        onclick="logName(this)"
+                        id="compleate_btn_6"
                         class="compleate_btn rounded-[8px] bg-[#3752FD] text-white py-[10px] px-5"
                       >
                         Compleate
@@ -347,7 +360,7 @@
             <div class="border-b border-dashed border-[#3751fd2d] pb-8">
               <div class="flex items-center gap-4 justify-center">
                 <img src="./assets/activity.png" alt="activity" />
-                <p class="text-[20px] font-medium text-[#00303C]">
+                <p class="text-[20px] font-medium text-[#00303C] cur">
                   Activity Log
                 </p>
               </div>
@@ -360,7 +373,7 @@
                 </button>
               </div>
             </div>
-            <div id="history" class="mt-8 space-y-8"></div>
+            <div id="history" class="mt-4 space-y-4"></div>
           </div>
         </div>
       </section>
