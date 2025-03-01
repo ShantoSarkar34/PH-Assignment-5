@@ -29,6 +29,8 @@ date();
 
 const compleateButtons = document.querySelectorAll(".compleate_btn");
 
+const cartTitle = document.querySelectorAll('cart_title');
+
 compleateButtons.forEach((button) => {
   button.addEventListener("click", function () {
     button.disabled = true;
@@ -40,6 +42,9 @@ compleateButtons.forEach((button) => {
 
     const remainingClick = document.getElementById("remaining_click").innerText;
     let convertClick = parseInt(remainingClick);
+
+
+    
 
 
     if (convertClick > 0 && convertTotalTask > 0) {
@@ -62,5 +67,5 @@ compleateButtons.forEach((button) => {
 document
   .getElementById("history_clear_btn")
   .addEventListener("click", function () {
-    document.getElementById("history").style.display = "none";
+    document.getElementById("history").innerHTML = '';
   });
