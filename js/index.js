@@ -29,8 +29,6 @@ date();
 
 const compleateButtons = document.querySelectorAll(".compleate_btn");
 
-const cartTitle = document.querySelectorAll('cart_title');
-
 compleateButtons.forEach((button) => {
   button.addEventListener("click", function () {
     button.disabled = true;
@@ -43,9 +41,21 @@ compleateButtons.forEach((button) => {
     const remainingClick = document.getElementById("remaining_click").innerText;
     let convertClick = parseInt(remainingClick);
 
+    const cartTitle = document.querySelectorAll("cart_title").innerText;
+    console.log(cartTitle);
 
-    
+    const cart = document.querySelector("h3").textContent;
+    const currentTime = new Date().toLocaleTimeString();
 
+    const historyDiv = document.getElementById("history");
+
+    const historyElement = document.createElement("h4");
+
+    const history =
+      (historyElement.innerText = `You have compleated the task ${cart} ${currentTime}`);
+    // const history = document.getElementById("history").innerHTML = `
+    // <h4 class="text-[16px] p-4 opacity-[70%] text-[#00303C]">you have compleated the task ${cart} ${currentTime}</h4>
+    // `;
 
     if (convertClick > 0 && convertTotalTask > 0) {
       convertClick--;
@@ -53,10 +63,10 @@ compleateButtons.forEach((button) => {
       convertTotalTask++;
       document.getElementById("total_task").innerText = convertTotalTask;
 
-      document.getElementById("history").innerHTML = `
-      <h2 class="text-[16px] opacity-[70%] text-[#00303C]">you have compleated the task</h2>
-      `;
-      
+      historyElement.innerText = history;
+
+      historyDiv.appendChild(historyElement);
+
       if (convertClick < 1) {
         alert("Congrats!! You have compleated all the Task");
       }
@@ -67,5 +77,5 @@ compleateButtons.forEach((button) => {
 document
   .getElementById("history_clear_btn")
   .addEventListener("click", function () {
-    document.getElementById("history").innerHTML = '';
+    document.getElementById("history").innerHTML = "";
   });
